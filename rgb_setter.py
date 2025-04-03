@@ -2,7 +2,7 @@ from openrgb import OpenRGBClient
 from openrgb.utils import RGBColor
 
 
-def set_rgb(**kwargs):
+def set_rgb(*kwargs):
     '''
     Sets the RGB color to use depending on the given input
 

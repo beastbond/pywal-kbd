@@ -11,4 +11,3 @@ def get_dominant_color(image):
     color_thief = colorthief.ColorThief(image)
     dominant_color = color_thief.get_color(quality=1)
     return dominant_color
-get_dominant_color('~/Pictures/Wallpapers/wallhaven-eo773r.jpg')
