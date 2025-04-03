@@ -1,8 +1,7 @@
 import os
 import time
 import argparse
-import colorsys
-from collections import defaultdict
+# import colorsys | TODO: Add the ability to accept HSV values
 from get_wallpaper_path import get_wallpaper_path
 from dominant_color import get_dominant_color
 
@@ -32,9 +31,16 @@ def set_rgb_lighting(color, device_name="None"):
                         print(f" - {dev.name}")
                 return False
             device = devices[0]
+            rgb_color = RGBColor(*color)
+            device.set_color(rgb_color)
         else:
             #Use the first device by default
             device = client.devices[0]
+
+        rgb_color = RGBColor(*color)
+        device.set_color(rgb_color)
+        print(f"Set {device.name} to RGB Color: {color}")
+        return True
     except Exception as e:
         print(f"Error setting RGB Color: {e}")
         return False
@@ -60,7 +66,6 @@ def main():
     print(f"Analyzing wallpaper: {wallpaper_path}")
     time.sleep(1)
 
-    #Now we set the RGB
     if not set_rgb_lighting(color, args.device):
         print("\nThis Script will set the RGB color based on the wallpaper or image in question if you:")
         print("1. Install OpenRGB (https://openrgb.org/)")
