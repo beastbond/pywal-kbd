@@ -27,6 +27,8 @@ git clone https://github.com/beastbond/pywal-kbd.git
   cd app
  python main.py [--device "device_name"] [--wallpaper "path/to/wallpaper.jpg"]
   ```
+- Note:
+For Linux users, you must manually choose the wallpaper path or else the script won't work, as there is no current way to get the exact path of the wallpaper in use.
 ## Requirements
 
 - Python 3.x
