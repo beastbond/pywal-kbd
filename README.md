@@ -13,12 +13,20 @@ A Python script that analyzes your desktop wallpaper, determines the dominant co
 
 1. Install Python 3.x
 2. Install dependencies:
-```pip install -r requirements.txt```
+```sh
+pip install -r requirements.txt
+```
 3. Install [OpenRGB](https://openrgb.org/) and run it in background
+4. Clone the repo
+```sh
+git clone https://github.com/beastbond/pywal-kbd.git
+```
 
 ## Usage
-```python wallpaper_rgb.py [--device "device_name"] [--wallpaper "path/to/wallpaper.jpg"]```
-
+ ```sh
+  cd app
+ python main.py [--device "device_name"] [--wallpaper "path/to/wallpaper.jpg"]
+  ```
 ## Requirements
 
 - Python 3.x
