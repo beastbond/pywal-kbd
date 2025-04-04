@@ -16,7 +16,7 @@ A Python script that analyzes your desktop wallpaper, determines the dominant co
 ```sh
 pip install -r requirements.txt
 ```
-3. Install [OpenRGB](https://openrgb.org/) and run it in background
+3. Install [OpenRGB](https://openrgb.org/) and run the server in background
 4. Clone the repo
 ```sh
 git clone https://github.com/beastbond/pywal-kbd.git
