@@ -9,7 +9,7 @@ def get_dominant_color(image_path, pallette_size=16):
     '''
     try:
         image = Image.open(image_path)
-        image = Image.convert('RGB')
+        image = image.convert('RGB')
         image.thumbnail((100, 100))
 
         colors = image.getcolors(maxcolors=10000)
