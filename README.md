@@ -13,7 +13,7 @@ A Python script that analyzes your desktop wallpaper, determines the dominant co
 
 1. Install Python 3.x
 2. Install dependencies:
-```pip install -r requiremnts.txt```
+```pip install -r requirements.txt```
 3. Install [OpenRGB](https://openrgb.org/) and run it in background
 
 ## Usage
